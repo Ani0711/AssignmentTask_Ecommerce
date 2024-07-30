@@ -1,0 +1,49 @@
+<!-- src/app/product-list/product-list.component.html -->
+<div class="content">
+  <div>
+    <div *ngIf="loading">Loading...</div>
+<div *ngIf="error" class="error">{{ error }}</div>
+<div *ngIf="!loading && !error">
+  <ul>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+      <tr *ngFor="let product of products">
+        <td>{{ product.productID }}</td>
+        <td>{{ product.productName }}</td>
+        <td>{{ product.price }}</td>
+        <td><button (click)="deleteProduct(product.productID)">Delete</button></td>
+        <button (click)="editProduct(product)">Edit</button>
+      </tr>
+    </table>
+    <form (ngSubmit)="addProduct()">
+      <input [(ngModel)]="newProduct.productID" name="productID" placeholder="Product ID" required />
+      <input [(ngModel)]="newProduct.productName" name="productName" placeholder="Product Name" required />
+      <input [(ngModel)]="newProduct.price" name="price" placeholder="Product Price" required type="number" />
+      <button type="submit">Add Product</button>
+    </form>
+
+    <div *ngIf="selectedProduct">
+          <form (ngSubmit)="saveProduct()">
+            <input [(ngModel)]="selectedProduct.productID" name="productID" placeholder="Product ID" readonly />
+            <input [(ngModel)]="selectedProduct.productName" name="productName" placeholder="Product Name" required />
+            <input [(ngModel)]="selectedProduct.price" name="price" placeholder="Product Price" required type="number" />
+            <button type="submit"  (click)="saveProduct()">Save Changes</button>
+            <button type="button" (click)="cancelEdit()">Cancel</button>
+          </form>
+        </div>
+  </ul>
+</div>
+    
+    
+
+
+    
+  </div>
+</div>
+
+  

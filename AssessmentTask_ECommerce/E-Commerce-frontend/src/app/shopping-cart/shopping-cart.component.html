@@ -1,0 +1,34 @@
+<div class="shopping-cart">
+    <h1>Shopping Cart</h1>
+  
+    
+  
+    <div class="cart">
+      <h2>Cart</h2>
+      <div *ngFor="let product of products; let i = index">
+        <h2>{{ product.productName }}</h2>
+        <p>Price: {{ product.price }}</p>
+        <input type="number" [(ngModel)]="productquantity[i]" placeholder="Quantity">
+        <!-- <input type="text" [(ngModel)]="discountValue" placeholder="Discount">
+        <button (click)="applyDiscount()">Apply Discount</button> -->
+        <button (click)="addToCart(1,2)">Add to Cart</button>
+      </div>
+      
+      
+      <!-- <ul>
+        <li *ngFor="let item of cartItems">
+          
+          <input type="number" min="1" [(ngModel)]="item.quantity" (change)="updateQuantity(item.productId, item.quantity)">
+          <button (click)="removeFromCart(item.productId)">Remove</button>
+        </li>
+      </ul> -->
+  
+      <input type="text" [(ngModel)]="discountValue" placeholder="Discount">
+      <button (click)="applyDiscount()">Apply Discount</button>
+  
+      <div class="total">
+        <h3>Total: {{ calculateTotal() }}</h3>
+      </div>
+    </div>
+  </div>
+  
