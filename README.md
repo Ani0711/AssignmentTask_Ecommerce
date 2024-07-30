@@ -1,4 +1,5 @@
-﻿# AssignmentTask_Ecommerce
+Link for the Github Repo: https://github.com/Ani0711/AssignmentTask_Ecommerce/
+ # AssignmentTask_Ecommerce
  ![Panel](https://github.com/Ani0711/AssignmentTask_Ecommerce/blob/main/AssessmentTask_ECommerce/Panel.jpg)
 Successfully created the Product Management panel
 With the funcitonality of :
