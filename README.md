@@ -1,4 +1,5 @@
 ﻿# AssignmentTask_Ecommerce
+ ![Panel](https://github.com/Ani0711/AssignmentTask_Ecommerce/blob/main/AssessmentTask_ECommerce/Panel.jpg)
 Successfully created the Product Management panel
 With the funcitonality of :
 - List of Products in a Table
@@ -14,7 +15,7 @@ Add Products to the Cart
   - Calculate Total Value of the Cart
   - Apply Discount Code to the Cart
   - Calculate Total Value of the Cart after Discount
-[Shoppingcartpanel](https://github.com/user-attachments/assets/32cc466f-e1f1-4007-ae9f-7ab595285359)
+![Shoppingcartpanel](https://github.com/user-attachments/assets/32cc466f-e1f1-4007-ae9f-7ab595285359)
 
 Also Created the frontend for the Sales Report Page With the features:
 - Total Revenue for the Day
